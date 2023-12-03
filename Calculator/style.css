@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  background: linear-gradient(
+    37deg,
+    #22c1c3,
+    #7ebe84,
+    rgba(189, 188, 102, 1) 66%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  align-items: center;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-display: swap;
+  justify-content: center;
+  height: inherit;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  height: 600px;
+  flex-basis: 500px;
+}
+.screen {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 10px;
+  text-align: right;
+  font-weight: 700;
+  width: 100%;
+}
+.button_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6% 0;
+}
+
+.button_digit,
+.button_special {
+  border-radius: 10px;
+  border: 0px;
+  background: rgba(255, 255, 255, 0.75);
+  flex-basis: 70px;
+  font-size: 20px;
+  font-weight: 700;
+  height: 70px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in;
+}
+
+.button_special {
+  background: rgba(255, 71, 154);
+  color: white;
+  transition: all 0.1s ease-in;
+}
+.button_digit:hover,
+.button_special:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #7ebe84;
+}
+
+.button_digit:active,
+.button_special:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+h1{
+  top: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  font-style: italic;
+}
